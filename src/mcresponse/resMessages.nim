@@ -135,6 +135,3 @@ responseMessages["unknown"] = ResponseMessage(
         resCode: Http422,
         message: "Unspecified response/error message",
         value  : JsonNode(nil) )
-
-# proc `[]`*(resMsg: ResponseMessages, resKey: string): string =
-#     result = resMsg[resKey]
