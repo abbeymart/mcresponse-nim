@@ -15,6 +15,8 @@
 import json, httpcore, tables
 import ./resMessages
 
+export resMessages
+
 proc msgFunc*(mcValue: JsonNode; mcCode, mcMsg: string; mcResCode: HttpCode;): ResponseMessage =
     result = ResponseMessage(
         code   : mcCode,
