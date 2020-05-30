@@ -5,6 +5,7 @@ author        = "Abi Akindele [abbeymart]"
 description   = "mConnect Standardised Response Package"
 license       = "MIT"
 srcDir        = "src"
+skipFiles     = @["project.md"]
 
 
 
