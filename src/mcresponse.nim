@@ -12,7 +12,7 @@
 ## 
 ## 
 
-import mcresponse/resMessage
-import mcresponse/resMessages
+import mcresponse/response
+import mcresponse/messages
 
-export resMessage, resMessages
+export response, messages
