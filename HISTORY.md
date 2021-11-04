@@ -2,7 +2,6 @@
 
 - TODO: update documentation
 
-
 ## Version 0.2.0
 
 - Release date: Nov 04, 2021
