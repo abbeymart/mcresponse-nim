@@ -1,8 +1,8 @@
 # Package
 
-version       = "0.1.2"
+version       = "0.3.0"
 author        = "Abi Akindele [abbeymart]"
-description   = "mConnect Standardised Response Package"
+description   = "mConnect Standard HTTP network-status codes/texts & Transaction-Response Package"
 license       = "MIT"
 srcDir        = "src"
 skipFiles     = @["project.md"]
@@ -11,4 +11,4 @@ skipFiles     = @["project.md"]
 
 # Dependencies
 
-requires "nim >= 1.2.0"
+requires "nim >= 1.6.2"

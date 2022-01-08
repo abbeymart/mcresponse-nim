@@ -1,6 +1,11 @@
-# Historical logs
+# Historical logs | github.com/abbeymart/mcresponse-nim
 
 - TODO: update documentation
+
+## Version 0.3.0
+
+- Release date: Jan 08, 2022
+- Refactor net-status-code-response-method
 
 ## Version 0.2.0
 

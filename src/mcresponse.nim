@@ -12,7 +12,8 @@
 ## 
 ## 
 
-import mcresponse/response
+import mcresponse/netcode
 import mcresponse/messages
+import mcresponse/response
 
-export response, messages
+export netcode, messages, response

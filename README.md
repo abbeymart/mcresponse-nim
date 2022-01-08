@@ -1,6 +1,7 @@
-# mcresponse package
+# mcresponse package | github.com/abbeymart/mcresponse-nim
 
-- Standardised response object for different types of transactions/functions
+- Standard HTTP network-status codes and texts
+- Standardised response object and method for transactions / tasks
 - See the tests folder and test cases for different scenarios and usage
 
 ## Installation
