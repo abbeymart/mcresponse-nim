@@ -12,22 +12,22 @@
 ## 
 ## 
 
-import json, httpcore, tables
+import json, tables
 import ./messages
 import ./netcode
 
-proc msgFunc*(mcCode: MessageCode; mcMsg: string; mcResCode: HttpCode; mcValue: JsonNode;): ResponseMessage =
+proc msgFunc*(mcCode: MessageCode; mcMsg: string; mcResCode: StatusCode; mcValue: JsonNode;): ResponseMessage =
     result = ResponseMessage(
         code   : mcCode,
         resCode: mcResCode,
         value  : mcValue,
         message: mcMsg)
 
-proc getResMessage*(messageType: MessageCode = MessageCode.UnknownCode;  options: ResponseMessage = ResponseMessage()): ResponseMessage = 
+proc getResMessage*(messageType: MessageCode = MessageCode.UnknownCode; options: ResponseMessage = ResponseMessage()): ResponseMessage = 
     var
         value: JsonNode
         code: MessageCode
-        resCode: HttpCode
+        resCode: StatusCode
         message: string
 
     # check for the messageType in the standard responseMessages
@@ -52,7 +52,6 @@ proc getResMessage*(messageType: MessageCode = MessageCode.UnknownCode;  options
         value = options.value
     else: 
         value = nil
-    
 
     result = msgFunc(mcCode = code, mcMsg = message, mcResCode = resCode, mcValue = value )
 
@@ -77,3 +76,4 @@ when isMainModule:
     var options = ResponseMessage(value: personInfo, message: "personal info")
 
     echo getResMessage(MessageCode.SuccessCode, options)
+

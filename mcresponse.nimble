@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.3.0"
+version       = "0.4.0"
 author        = "Abi Akindele [abbeymart]"
 description   = "mConnect Standard HTTP network-status codes/texts & Transaction-Response Package"
 license       = "MIT"
@@ -11,4 +11,4 @@ skipFiles     = @["project.md"]
 
 # Dependencies
 
-requires "nim >= 1.6.2"
+requires "nim >= 1.6.4"
