@@ -1,6 +1,10 @@
 # Historical logs | github.com/abbeymart/mcresponse-nim
 
 - TODO: update documentation
+## Version 0.4.0
+
+- Release date: Oct 15, 2022
+- Refactor method-params-v0.4.0
 
 ## Version 0.3.0
 
